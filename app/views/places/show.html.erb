@@ -72,6 +72,7 @@
       	<div class="modal-body">
         	<%= f.input :message %>
         	<%= f.input :rating, as: :select, collection: Comment::RATINGS %>
+
         </div>
 
         <div class="modal-footer">
@@ -98,6 +99,7 @@
       <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
       	<div class="modal-body">
         	<%= f.input :caption %>
+        	<%= f.input :picture %>
         </div>
 
         <div class="modal-footer">
